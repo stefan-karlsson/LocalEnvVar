@@ -19,7 +19,7 @@ public static class EnvVar
         ValidateProviders(providers);
 
         var getEnvVarTasks = providers.Select(p => p.GetEnvVars());
-        
+
         var results = await Task.WhenAll(getEnvVarTasks).ConfigureAwait(false);
 
         var variables = results.SelectMany(dict => dict);
@@ -43,7 +43,7 @@ public static class EnvVar
     private static void CheckForDuplicateProviders(IEnvVarProvider[] providers)
     {
         var uniqueProviders = new HashSet<IEnvVarProvider>(providers);
-        
+
         if (uniqueProviders.Count != providers.Length)
             throw new ArgumentException("Duplicate providers are not allowed.", nameof(providers));
     }

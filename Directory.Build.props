@@ -7,10 +7,6 @@
     <Product>$(Company) Personal Products</Product>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TestProject)' == 'false'">
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
-
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <TargetFramework>net9.0</TargetFramework>
@@ -21,12 +17,20 @@
     <Deterministic>true</Deterministic>
     <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <RunAnalyzersDuringLiveAnalysis>True</RunAnalyzersDuringLiveAnalysis>
-    <RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
-    <EnableNETAnalyzers>True</EnableNETAnalyzers>
-    <AnalysisMode>All</AnalysisMode>
-    <Optimize>True</Optimize>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
   </PropertyGroup>
 </Project>
