@@ -7,6 +7,7 @@
     <Product>$(Company) Personal Products</Product>
     <RepositoryUrl>https://github.com/stefan-karlsson/LocalEnvVar</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,7 +16,7 @@
     <Configurations>Debug;Release;Production</Configurations>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+<!--    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>-->
     <Deterministic>true</Deterministic>
     <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
