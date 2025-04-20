@@ -29,9 +29,9 @@ jobs:
       - name: Push LocalEnvVar.Core
         run: dotnet nuget push LocalEnvVar.Core.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.LIBRARY_RELEASE_TOKEN }}
 
       - name: Push LocalEnvVar.Aws.Lambda
         run: dotnet nuget push LocalEnvVar.Aws.Lambda.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.LIBRARY_RELEASE_TOKEN }}
