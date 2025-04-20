@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable Label="true" />
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LocalEnvVar.Core\LocalEnvVar.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Lambda" />
+    <PackageReference Include="AWSSDK.SSO" />
+    <PackageReference Include="AWSSDK.SSOOIDC" />
+    <PackageReference Include="JetBrains.Annotations"/>
+  </ItemGroup>
+</Project>

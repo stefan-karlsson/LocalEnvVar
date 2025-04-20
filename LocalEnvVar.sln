@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{101D14ED-9FB2-4769-A032-EA3B58693385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D5DE4643-0F28-4222-8B64-BC411471E3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalEnvVar.Aws.Lambda", "src\LocalEnvVar.Aws.Lambda\LocalEnvVar.Aws.Lambda.csproj", "{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalEnvVar.Core", "src\LocalEnvVar.Core\LocalEnvVar.Core.csproj", "{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA} = {101D14ED-9FB2-4769-A032-EA3B58693385}
+		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3} = {101D14ED-9FB2-4769-A032-EA3B58693385}
+	EndGlobalSection
+EndGlobal
