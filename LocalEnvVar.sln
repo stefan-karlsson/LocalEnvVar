@@ -8,6 +8,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalEnvVar.Aws.Lambda", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalEnvVar.Core", "src\LocalEnvVar.Core\LocalEnvVar.Core.csproj", "{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{C4404EF3-0789-498B-A917-4441AE6F1B69}"
+	ProjectSection(SolutionItems) = preProject
+		docs\images\logo.png = docs\images\logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{77C907C3-DB31-49CB-913B-801CD70482F6}"
+	ProjectSection(SolutionItems) = preProject
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+		SECURITY.md = SECURITY.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{70ED0644-1DE6-4940-99F1-F4A5F17F6BDA} = {101D14ED-9FB2-4769-A032-EA3B58693385}
 		{7BF969FE-7392-4AC6-B3CA-B3F25F73E7E3} = {101D14ED-9FB2-4769-A032-EA3B58693385}
+		{C4404EF3-0789-498B-A917-4441AE6F1B69} = {D5DE4643-0F28-4222-8B64-BC411471E3B1}
 	EndGlobalSection
 EndGlobal
