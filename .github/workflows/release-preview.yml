@@ -24,7 +24,7 @@ jobs:
         run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
 
       - name: Pack
-        run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output packages
+        run: dotnet pack --configuration Release /p:Version=${VERSION} --output packages
 
       - name: Push
         run: dotnet nuget push packages/*.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
