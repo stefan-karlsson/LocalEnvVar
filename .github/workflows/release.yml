@@ -23,7 +23,7 @@ jobs:
 
       - name: Extract release notes
         run: |
-          git log --pretty=format:'%d %s' ${GITHUB_REF} | perl -pe 's| \(.*tag: v(\d+\.\d+\.\d+(?:-(?:beta|alpha|rc)(?:\.\d+)?)?)(, .*?)*\)|\n## \1\n|g' > RELEASE-NOTES
+          git log --pretty=format:'%d %s' ${GITHUB_REF} | perl -pe 's|\s\(\s*tag: v(\d+\.\d+\.\d+(?:-(?:beta|alpha|rc)(?:\.\d+)?)?)(, .*?)*\)|\n## \1\n|g' > RELEASE-NOTES
 
       - name: Set VERSION variable from tag
         run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
