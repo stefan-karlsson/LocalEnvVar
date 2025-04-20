@@ -5,6 +5,8 @@
     <Copyright>Copyright © $(Company) $([System.DateTime]::Now.Year)</Copyright>
     <Trademark>$(Company)™</Trademark>
     <Product>$(Company) Personal Products</Product>
+    <RepositoryUrl>https://github.com/stefan-karlsson/LocalEnvVar</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup>

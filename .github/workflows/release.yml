@@ -35,14 +35,9 @@ jobs:
         run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
 
       - name: Pack
-        run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
-
-      - name: Push LocalEnvVar.Core
-        run: dotnet nuget push LocalEnvVar.Core.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
-        env:
-          GITHUB_TOKEN: ${{ secrets.LIBRARY_RELEASE_TOKEN }}
-
-      - name: Push LocalEnvVar.Aws.Lambda
-        run: dotnet nuget push LocalEnvVar.Aws.Lambda.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
+        run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output packages
+      
+      - name: Push
+        run: dotnet nuget push packages/*.${VERSION}.nupkg --source https://nuget.pkg.github.com/stefan-karlsson/index.json --api-key ${GITHUB_TOKEN}
         env:
           GITHUB_TOKEN: ${{ secrets.LIBRARY_RELEASE_TOKEN }}

@@ -1,4 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>LocalEnvVar.Aws.Lambda</PackageId>
+  </PropertyGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\LocalEnvVar.Core\LocalEnvVar.Core.csproj" />
   </ItemGroup>
