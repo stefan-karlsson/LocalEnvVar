@@ -11,6 +11,6 @@
     <PackageReference Include="AWSSDK.Lambda" />
     <PackageReference Include="AWSSDK.SSO" />
     <PackageReference Include="AWSSDK.SSOOIDC" />
-    <PackageReference Include="JetBrains.Annotations"/>
+    <PackageReference Include="JetBrains.Annotations" />
   </ItemGroup>
 </Project>
